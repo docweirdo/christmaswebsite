@@ -1,0 +1,171 @@
+body, ul, li, h1, h2, a, p{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+body{
+    background-color: #F0f0f0;
+    min-height: 100%;
+    position: relative;
+}
+
+main{
+    position: relative;
+    height: 50%;
+    background-color: #333333;
+    box-shadow: 0px 10px 10px #777777;
+    overflow: hidden;
+}
+
+iframe {
+    display: none;
+    height: 100%;
+    max-width: 100%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: +100%;
+}
+
+#peepo{
+    width: auto;
+    height: 70%;
+    max-width: 100%;
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0%;
+}
+
+img:hover{
+    transform: scale(1.1);
+    bottom: 3%;
+}
+
+
+nav{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu{
+    white-space: nowrap;
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+.menu li{
+    width: 33%;
+    display: inline-block;
+}
+
+.menu li button{
+    font-size: 1em;
+    background-color: white;
+    border-radius: 25px;
+    padding: 1px 8px;
+    font-family: Georgia;
+    font-weight: bold;
+    cursor: default;
+    box-shadow: 2px 2px lightgray;
+    text-decoration: none;
+    color: #feb614;
+    border: 5px solid transparent;
+    outline: none;
+    display: inline;
+}
+
+.menu li button:hover{
+    border-radius: 25px;
+    border: 5px outset grey;
+}
+
+.menu li button:focus{
+    border-radius: 25px;
+    border: 5px outset #fe2020;
+}
+
+article{
+    max-width: 500px;
+    padding: 25px 5%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+article h2{
+    margin-bottom: 3px;
+}
+
+article p{
+    columns: 2;
+    column-gap: 2em;
+    line-height: 1.5em;
+}
+
+article a{
+    padding: 10px;
+}
+
+article img{
+    height: 3%;
+    width: auto;
+    display: none;
+    position: relative;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #fe2020;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}   
+
+footer p{
+    color: white;
+    font-size: 1.2em;  
+    
+}
+
+@media only screen and (max-width: 1100px) {
+    .menu li{
+        font-size: 1.3em;
+    }
+
+    .menu li button{
+        font-size: 0.8em;
+    }
+
+    article h2{
+        font-size: 1.3em;
+    }
+
+    article p{
+        font-size: 1em;
+    }
+
+    article{
+        padding-bottom: 40px;
+    }
+
+    footer p{
+        font-size: 1em;
+    }
+
+    footer{
+        padding: 5px;
+    };
+
+
+}
